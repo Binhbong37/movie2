@@ -5,6 +5,7 @@ const Navigation = styled.div`
     height: 80px;
     position: fixed;
     top: 0;
+    z-index: 2;
     transition-timing-function: ease-in;
     transition: all 1s;
 
@@ -12,7 +13,7 @@ const Navigation = styled.div`
         height: 100px;
     }
     .navContainer {
-        background-color: var(--color-background);
+        background-color: transparent;
         display: flex;
         align-items: center;
         flex-direction: row;
