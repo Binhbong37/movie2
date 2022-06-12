@@ -17,6 +17,15 @@ const IntroContainer = styled.div`
         position: absolute;
         top: 35%;
         left: 10%;
+
+        .headingIntro {
+            font-size: 60px;
+            transition: all 0.3s ease;
+
+            @media screen and (max-width: 700px) {
+                font-size: 30px;
+            }
+        }
     }
 
     .btnVolume {
@@ -24,7 +33,7 @@ const IntroContainer = styled.div`
         width: 40px;
         height: 40px;
         right: 10%;
-        top: 50%;
+        top: 40%;
         cursor: pointer;
         transition: all 0.3s ease;
         transform: scale(1);
@@ -41,7 +50,7 @@ const IntroContainer = styled.div`
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 300px;
+        height: 150px;
         background-image: linear-gradient(
             180deg,
             transparent,

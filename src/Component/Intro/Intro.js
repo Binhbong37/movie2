@@ -25,8 +25,7 @@ const Intro = () => {
             <div className="introInfo">
                 <h2 className="headingIntro">Netflix moive</h2>
                 <p className="overviewIntro">
-                    This is intro on upcoming season, this is intro on upcoming
-                    season this is intro on upcoming season
+                    This is intro on upcoming season,
                 </p>
             </div>
             {isMuted ? (

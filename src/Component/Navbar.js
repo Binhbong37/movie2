@@ -3,10 +3,19 @@ import { MdSearch } from 'react-icons/md';
 
 import Navigation from '../assets/wrappers/Navigation';
 import Logo from '../assets/images/Netflix_Logo_RGB.png';
+import { useScrollY } from './hooks';
 
 const Navbar = () => {
+    const [scrollY] = useScrollY();
+
     return (
-        <Navigation>
+        <Navigation
+            style={
+                scrollY < 50
+                    ? { backgroundColor: 'transparent' }
+                    : { backgroundColor: 'var(--color-background' }
+            }
+        >
             <div className="navContainer">
                 <div className="logo">
                     <img src={Logo} alt="" />
